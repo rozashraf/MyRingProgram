@@ -1,0 +1,219 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 20 , : y = 20  , 
+		 :width =  816 , :height = 585 , 
+		 :title =  "Department Form" , 
+		 :backcolor =  "" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  ,
+		 :GUILibrary =  0  
+
+		]
+	],
+	[ :name = "Label1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 66 , : y = 30  , 
+		 :width =  200 , :height = 39 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Department Number :",
+		 :textalign =  0
+		]
+	],
+	[ :name = "txtDeptNo" , :id = 3 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 335 , : y = 33  , 
+		 :width =  393 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "txtDeptName" , :id = 4 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 335 , : y = 72  , 
+		 :width =  393 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label4" , :id = 5 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 66 , : y = 69  , 
+		 :width =  200 , :height = 39 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Department Name :",
+		 :textalign =  0
+		]
+	],
+	[ :name = "txtDeptLocation" , :id = 6 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 335 , : y = 109  , 
+		 :width =  393 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label6" , :id = 7 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 66 , : y = 106  , 
+		 :width =  223 , :height = 39 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Department Location :",
+		 :textalign =  0
+		]
+	],
+	[ :name = "btnAdd" , :id = 8 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 57 , : y = 182  , 
+		 :width =  131 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Add",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Add_Dept"
+		]
+	],
+	[ :name = "btnEdit" , :id = 9 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 200 , : y = 182  , 
+		 :width =  131 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Edit",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Edit_Dept"
+		]
+	],
+	[ :name = "btnDelete" , :id = 10 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 338 , : y = 182  , 
+		 :width =  131 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Delete",
+		 :BtnImage =  "",
+		 :setClickEvent =  ""
+		]
+	],
+	[ :name = "btnFind" , :id = 11 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 477 , : y = 182  , 
+		 :width =  131 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Find",
+		 :BtnImage =  "",
+		 :setClickEvent =  ""
+		]
+	],
+	[ :name = "btnClear" , :id = 12 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 617 , : y = 182  , 
+		 :width =  131 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Clear",
+		 :BtnImage =  "",
+		 :setClickEvent =  "clear_data"
+		]
+	],
+	[ :name = "TableWidget1" , :id = 13 , :classname = "formdesigner_qtablewidget" , :data = [
+		 :x = 17 , : y = 284  , 
+		 :width =  769 , :height = 259 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :RowCount =  "",
+		 :ColumnCount =  "0",
+		 :HorizontalHeaders =  "",
+		 :ColumnsWidth =  "",
+		 :HorizontalHeaderStyle =  "",
+		 :VerticalHeaderStyle =  "",
+		 :selectionbehavior =  0,
+		 :alternatingcolors =  0,
+		 :setcellActivatedEvent =  "",
+		 :setcellChangedEvent =  "",
+		 :setcellClickedEvent =  "",
+		 :setcellDoubleClickedEvent =  "",
+		 :setcellEnteredEvent =  "",
+		 :setcellPressedEvent =  "",
+		 :setcurrentCellChangedEvent =  "",
+		 :setcurrentItemChangedEvent =  "",
+		 :setitemActivatedEvent =  "",
+		 :setitemChangedEvent =  "",
+		 :setitemClickedEvent =  "",
+		 :setitemDoubleClickedEvent =  "",
+		 :setitemEnteredEvent =  "",
+		 :setitemPressedEvent =  "",
+		 :setitemSelectionChangedEvent =  ""
+		]
+	],
+	[ :name = "btnSearch" , :id = 14 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 428 , : y = 239  , 
+		 :width =  131 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Search",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Search"
+		]
+	],
+	[ :name = "txtSearch" , :id = 15 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 23 , : y = 240  , 
+		 :width =  393 , :height = 36 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	]
+]
+# End Form Designer File
