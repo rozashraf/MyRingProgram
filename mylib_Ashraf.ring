@@ -36,6 +36,21 @@ class formTools{
 			}
 		}
 		
+		func MsgBoxYesNo(text){
+			frm = myform
+			msg = new messagebox(frm) {
+				setwindowtitle(frm.windowtitle())
+				settext(text)
+				setstandardbuttons( QMessageBox_Yes | QMessagebox_No )
+				r = exec()
+				if r = QMessagebox_yes 
+					return True 
+				else 
+					return False 
+				ok
+			}
+		}
+
 		func imputBox(Text){
 			frm = myform 
 			inbox = new inputdialog(frm) {
@@ -45,7 +60,29 @@ class formTools{
 			}
 			return inbox.textvalue()
 		}
+
+		func imputBoxNum(Text){
+			frm = myform 
+			inbox = new inputdialog(frm) {
+				setwindowtitle(frm.windowtitle())
+				setlabeltext(text)				
+				setinputmode(2)
+				exec()
+			}
+			return inbox.doublevalue()
+		}
 		
+		func imputBoxInt(Text){
+			frm = myform
+			inbox = new inputdialog(frm) {
+				setwindowtitle(frm.windowtitle())
+				setlabeltext(text)				
+				setinputmode(1)
+				exec()
+			}
+			return inbox.intvalue()
+		}
+
 		func imputBoxPass(Text){
 			frm = myform 
 			inbox = new inputdialog(frm) {

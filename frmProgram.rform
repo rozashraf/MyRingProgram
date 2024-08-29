@@ -1,7 +1,7 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 20 , : y = 20  , 
+		 :x = 20 , : y = 0  , 
 		 :width =  400 , :height = 400 , 
 		 :title =  "Program Form" , 
 		 :backcolor =  "" , 
@@ -35,7 +35,7 @@ aObjectsList = [
 		 :parent =  "win"  ,
 		 :text =  "Employee",
 		 :BtnImage =  "",
-		 :setClickEvent =  "Department"
+		 :setClickEvent =  "open_Employee"
 		]
 	]
 ]

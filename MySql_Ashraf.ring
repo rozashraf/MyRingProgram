@@ -54,7 +54,7 @@ func mysql_auto_number(table_name, column_name)
 		return r[2][1]
 	ok
 
-func mysql_fill_table(table , select)
+func mysql_fill_data(table , select)
 	if lower( type(table)) !=  "object"
 		see "Error: Use object only."
 		bye
@@ -83,6 +83,21 @@ func mysql_fill_table(table , select)
 			table.setitem(row-1, col, cell) 
 		next
 	next
+
+func mysql_fill_combobox( select , combobox , table_name, column_name)
+		if lower( type(combobox)) !=  "object"
+		see "Error: Use object only."
+		bye
+	ok
+	if lower( classname(combobox) ) != "combobox"
+		see "Error: Use combobox only."
+		bye
+	ok
+	r = mysql_get(select )
+	for row=1 to len(r)
+		combobox.additem(row, 0 )
+	next
+
 
 
 

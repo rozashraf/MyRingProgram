@@ -1,7 +1,7 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 20 , : y = 20  , 
+		 :x = -116 , : y = -241  , 
 		 :width =  816 , :height = 585 , 
 		 :title =  "Department Form" , 
 		 :backcolor =  "" , 
@@ -128,7 +128,7 @@ aObjectsList = [
 		 :parent =  "win"  ,
 		 :text =  "Delete",
 		 :BtnImage =  "",
-		 :setClickEvent =  ""
+		 :setClickEvent =  "Del_Dept"
 		]
 	],
 	[ :name = "btnFind" , :id = 11 , :classname = "formdesigner_qpushbutton" , :data = [
@@ -140,7 +140,7 @@ aObjectsList = [
 		 :parent =  "win"  ,
 		 :text =  "Find",
 		 :BtnImage =  "",
-		 :setClickEvent =  ""
+		 :setClickEvent =  "Find_Dept"
 		]
 	],
 	[ :name = "btnClear" , :id = 12 , :classname = "formdesigner_qpushbutton" , :data = [
@@ -179,7 +179,7 @@ aObjectsList = [
 		 :setcurrentCellChangedEvent =  "",
 		 :setcurrentItemChangedEvent =  "",
 		 :setitemActivatedEvent =  "",
-		 :setitemChangedEvent =  "",
+		 :setitemChangedEvent =  "show_result_count",
 		 :setitemClickedEvent =  "",
 		 :setitemDoubleClickedEvent =  "",
 		 :setitemEnteredEvent =  "",
@@ -188,31 +188,57 @@ aObjectsList = [
 		]
 	],
 	[ :name = "btnSearch" , :id = 14 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 428 , : y = 239  , 
-		 :width =  131 , :height = 36 , 
+		 :x = 292 , : y = 235  , 
+		 :width =  110 , :height = 36 , 
 		 :textcolor =  "" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
 		 :parent =  "win"  ,
 		 :text =  "Search",
 		 :BtnImage =  "",
-		 :setClickEvent =  "Search"
+		 :setClickEvent =  "search_dept"
 		]
 	],
 	[ :name = "txtSearch" , :id = 15 , :classname = "formdesigner_qlineedit" , :data = [
-		 :x = 23 , : y = 240  , 
-		 :width =  393 , :height = 36 , 
+		 :x = 17 , : y = 235  , 
+		 :width =  261 , :height = 36 , 
 		 :textcolor =  "" , 
 		 :backcolor =  "white" , 
 		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
 		 :parent =  "win"  ,
 		 :text =  "",
-		 :setTextChangedEvent =  "",
+		 :setTextChangedEvent =  "search_dept2",
 		 :setcursorPositionChangedEvent =  "",
 		 :seteditingFinishedEvent =  "",
 		 :setreturnPressedEvent =  "",
 		 :setselectionChangedEvent =  "",
 		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "CheckBoxAutoSearch" , :id = 16 , :classname = "formdesigner_qcheckbox" , :data = [
+		 :x = 414 , : y = 239  , 
+		 :width =  140 , :height = 25 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Auto Search",
+		 :setstateChangedEvent =  "",
+		 :setclickedEvent =  "",
+		 :setpressedEvent =  "",
+		 :setreleasedEvent =  "",
+		 :settoggledEvent =  ""
+		]
+	],
+	[ :name = "LabelCount" , :id = 17 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 567 , : y = 235  , 
+		 :width =  219 , :height = 37 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial,16,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Result: 0",
+		 :textalign =  0
 		]
 	]
 ]

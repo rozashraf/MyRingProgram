@@ -3,6 +3,7 @@
 load "frmProgramView.ring"
 load "mylib_ashraf.ring"
 load "frmDepartmentController.ring"
+load "frmEmployeeController.ring"
 
 import System.GUI
 
@@ -24,3 +25,7 @@ class frmProgramController from windowsControllerParent
 
 	func OpenDept()
 		open_window(:frmDepartmentController)
+
+
+	func open_Employee()
+		open_window(:frmEmployeeController)
